@@ -1,0 +1,45 @@
+# Node.js and NPM
+node_modules/
+npm-debug.log
+npm-error.log
+yarn-error.log
+yarn-debug.log
+yarn.lock
+
+# Build output
+build/
+dist/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-*
+*.swp
+*.swo
+*.log
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+*.env
+.env.local
+.env.*.local
+.env.production.local
+.env.test.local
+.env.development.local
+
+# Dependency directories
+.pnp/
+.pnp.js
+
+# Testing
+coverage/
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Windows
+npm-debug.log*
