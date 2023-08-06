@@ -9,7 +9,7 @@ export default function Nav() {
       <nav className="flex flex-col-reverse gap-y-5 shad rounded-lg py-3 px-5 lg:flex-row justify-between items-center">
         <div className="lg:flex items-center justify-between hidden">
           <span className="font-bold">
-            <PiNotepadThin className="text-gray-500 inline text-2xl mb-1" />
+            <PiNotepadThin className="text-gray-500 inline text-2xl mb-1 mr-2" />
             Note Taker
           </span>
         </div>
