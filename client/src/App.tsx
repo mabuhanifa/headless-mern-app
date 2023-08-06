@@ -1,11 +1,15 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Nav from "./components/Nav";
+import Dashboard from "./components/Dashboard";
+import Layout from "./components/Layout";
 
 function App() {
   return (
-    <div className="p-5">
-      <Nav />
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+      </Routes>
+    </Layout>
   );
 }
 
