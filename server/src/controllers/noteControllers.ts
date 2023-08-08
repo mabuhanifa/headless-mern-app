@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import Note from "../models/Note";
 
-const getTasks = async (req: Request, res: Response) => {
+export const getNotes = async (req: Request, res: Response) => {
   try {
     const notes = await Note.find({});
     res.send(notes);
@@ -10,7 +10,7 @@ const getTasks = async (req: Request, res: Response) => {
   }
 };
 
-const createNote = async (req: Request, res: Response) => {
+export const createNote = async (req: Request, res: Response) => {
   try {
     const { title, description, status, date } = req.body;
     const note = await Note.create({ title, description, status, date });
@@ -27,7 +27,7 @@ const createNote = async (req: Request, res: Response) => {
   }
 };
 
-const deleteNote = async (req: Request, res: Response) => {
+export const deleteNote = async (req: Request, res: Response) => {
   try {
     const notes = await Note.deleteOne({ _id: req.params.id });
     res.send(notes);
@@ -36,7 +36,7 @@ const deleteNote = async (req: Request, res: Response) => {
   }
 };
 
-const updateNote = async (req: Request, res: Response) => {
+export const updateNote = async (req: Request, res: Response) => {
   try {
     const id = req.params.id;
     const data = req.body;
